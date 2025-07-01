@@ -7,22 +7,22 @@ from moveit_configs_utils import MoveItConfigsBuilder
 
 
 def generate_launch_description():
-    moveit_config = MoveItConfigsBuilder("name", package_name="my_moveit_config").to_moveit_configs()
+    moveit_config = MoveItConfigsBuilder(
+        "name", package_name="my_moveit_config"
+    ).to_moveit_configs()
 
     # MoveItCpp demo executable
     moveit_cpp_node = Node(
-        name="gripper_control",
+        name="pick_and_place_real",
         package="moveit2_scripts",
-        executable="gripper_control",
+        executable="pick_and_place_real",
         output="screen",
         parameters=[
             moveit_config.robot_description,
             moveit_config.robot_description_semantic,
             moveit_config.robot_description_kinematics,
-            {'use_sim_time': True},
+            {"use_sim_time": True},
         ],
     )
 
-    return LaunchDescription(
-        [moveit_cpp_node]
-    )
+    return LaunchDescription([moveit_cpp_node])

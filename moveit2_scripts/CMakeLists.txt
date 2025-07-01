@@ -29,9 +29,9 @@ if(BUILD_TESTING)
   ament_lint_auto_find_test_dependencies()
 endif()
 
-add_executable(pick_and_place_trajectory src/pick_and_place_trajectory.cpp)
-target_include_directories(pick_and_place_trajectory PUBLIC include)
-ament_target_dependencies(pick_and_place_trajectory
+add_executable(pick_and_place_real src/pick_and_place_real.cpp)
+target_include_directories(pick_and_place_real PUBLIC include)
+ament_target_dependencies(pick_and_place_real
 	ament_cmake
 	rclcpp
 	rclcpp_action
@@ -70,7 +70,7 @@ ament_target_dependencies(pick_and_place
     control_msgs)
 
 install(TARGETS
-	pick_and_place_trajectory
+	pick_and_place_real
 	gripper_control
 	pick_and_place
 	DESTINATION lib/${PROJECT_NAME}
