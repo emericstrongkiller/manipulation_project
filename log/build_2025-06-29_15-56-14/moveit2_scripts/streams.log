@@ -1,0 +1,33 @@
+[0.070s] Invoking command in '/home/user/ros2_ws/src/manipulation_project/build/moveit2_scripts': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/simulations/ros2_sims_ws/install/rclrs_tests:/home/simulations/ros2_sims_ws/install/examples_rclrs_minimal_client_service:/home/simulations/ros2_sims_ws/install/sensor_msgs_py:/home/simulations/ros2_sims_ws/install/examples_rclrs_minimal_pub_sub:/home/simulations/ros2_sims_ws/install/examples_rclrs_message_demo:/home/simulations/ros2_sims_ws/install/rclrs:/home/simulations/ros2_sims_ws/install/rosidl_runtime_rs:/home/user/ros2_ws/install/ros2test:/home/user/ros2_ws/install/robotiq_85_driver:/opt/ros/humble _=/usr/bin/env /usr/bin/cmake --build /home/user/ros2_ws/src/manipulation_project/build/moveit2_scripts -- -j8 -l8
+[0.268s] [ 33%] Built target pick_and_place_trajectory
+[0.313s] [35m[1mConsolidate compiler generated dependencies of target pick_and_place[0m
+[0.393s] [ 50%] [32mBuilding CXX object CMakeFiles/pick_and_place.dir/src/pick_and_place.cpp.o[0m
+[14.310s] [ 66%] [32m[1mLinking CXX executable pick_and_place[0m
+[14.851s] [ 66%] Built target pick_and_place
+[14.941s] [100%] Built target gripper_control
+[14.967s] Invoked command in '/home/user/ros2_ws/src/manipulation_project/build/moveit2_scripts' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/simulations/ros2_sims_ws/install/rclrs_tests:/home/simulations/ros2_sims_ws/install/examples_rclrs_minimal_client_service:/home/simulations/ros2_sims_ws/install/sensor_msgs_py:/home/simulations/ros2_sims_ws/install/examples_rclrs_minimal_pub_sub:/home/simulations/ros2_sims_ws/install/examples_rclrs_message_demo:/home/simulations/ros2_sims_ws/install/rclrs:/home/simulations/ros2_sims_ws/install/rosidl_runtime_rs:/home/user/ros2_ws/install/ros2test:/home/user/ros2_ws/install/robotiq_85_driver:/opt/ros/humble _=/usr/bin/env /usr/bin/cmake --build /home/user/ros2_ws/src/manipulation_project/build/moveit2_scripts -- -j8 -l8
+[15.117s] Invoking command in '/home/user/ros2_ws/src/manipulation_project/build/moveit2_scripts': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/simulations/ros2_sims_ws/install/rclrs_tests:/home/simulations/ros2_sims_ws/install/examples_rclrs_minimal_client_service:/home/simulations/ros2_sims_ws/install/sensor_msgs_py:/home/simulations/ros2_sims_ws/install/examples_rclrs_minimal_pub_sub:/home/simulations/ros2_sims_ws/install/examples_rclrs_message_demo:/home/simulations/ros2_sims_ws/install/rclrs:/home/simulations/ros2_sims_ws/install/rosidl_runtime_rs:/home/user/ros2_ws/install/ros2test:/home/user/ros2_ws/install/robotiq_85_driver:/opt/ros/humble _=/usr/bin/env /usr/bin/cmake --install /home/user/ros2_ws/src/manipulation_project/build/moveit2_scripts
+[15.133s] -- Install configuration: ""
+[15.134s] -- Up-to-date: /home/user/ros2_ws/src/manipulation_project/install/moveit2_scripts/lib/moveit2_scripts/pick_and_place_trajectory
+[15.134s] -- Up-to-date: /home/user/ros2_ws/src/manipulation_project/install/moveit2_scripts/lib/moveit2_scripts/gripper_control
+[15.135s] -- Installing: /home/user/ros2_ws/src/manipulation_project/install/moveit2_scripts/lib/moveit2_scripts/pick_and_place
+[15.136s] -- Set runtime path of "/home/user/ros2_ws/src/manipulation_project/install/moveit2_scripts/lib/moveit2_scripts/pick_and_place" to ""
+[15.137s] -- Up-to-date: /home/user/ros2_ws/src/manipulation_project/install/moveit2_scripts/share/moveit2_scripts//launch
+[15.137s] -- Up-to-date: /home/user/ros2_ws/src/manipulation_project/install/moveit2_scripts/share/moveit2_scripts//launch/pick_and_place.launch.py
+[15.138s] -- Up-to-date: /home/user/ros2_ws/src/manipulation_project/install/moveit2_scripts/share/moveit2_scripts//launch/gripper_control.launch.py
+[15.138s] -- Up-to-date: /home/user/ros2_ws/src/manipulation_project/install/moveit2_scripts/share/ament_index/resource_index/package_run_dependencies/moveit2_scripts
+[15.138s] -- Up-to-date: /home/user/ros2_ws/src/manipulation_project/install/moveit2_scripts/share/ament_index/resource_index/parent_prefix_path/moveit2_scripts
+[15.138s] -- Up-to-date: /home/user/ros2_ws/src/manipulation_project/install/moveit2_scripts/share/moveit2_scripts/environment/ament_prefix_path.sh
+[15.138s] -- Up-to-date: /home/user/ros2_ws/src/manipulation_project/install/moveit2_scripts/share/moveit2_scripts/environment/ament_prefix_path.dsv
+[15.139s] -- Up-to-date: /home/user/ros2_ws/src/manipulation_project/install/moveit2_scripts/share/moveit2_scripts/environment/path.sh
+[15.139s] -- Up-to-date: /home/user/ros2_ws/src/manipulation_project/install/moveit2_scripts/share/moveit2_scripts/environment/path.dsv
+[15.139s] -- Up-to-date: /home/user/ros2_ws/src/manipulation_project/install/moveit2_scripts/share/moveit2_scripts/local_setup.bash
+[15.139s] -- Up-to-date: /home/user/ros2_ws/src/manipulation_project/install/moveit2_scripts/share/moveit2_scripts/local_setup.sh
+[15.140s] -- Up-to-date: /home/user/ros2_ws/src/manipulation_project/install/moveit2_scripts/share/moveit2_scripts/local_setup.zsh
+[15.140s] -- Up-to-date: /home/user/ros2_ws/src/manipulation_project/install/moveit2_scripts/share/moveit2_scripts/local_setup.dsv
+[15.140s] -- Installing: /home/user/ros2_ws/src/manipulation_project/install/moveit2_scripts/share/moveit2_scripts/package.dsv
+[15.141s] -- Up-to-date: /home/user/ros2_ws/src/manipulation_project/install/moveit2_scripts/share/ament_index/resource_index/packages/moveit2_scripts
+[15.141s] -- Up-to-date: /home/user/ros2_ws/src/manipulation_project/install/moveit2_scripts/share/moveit2_scripts/cmake/moveit2_scriptsConfig.cmake
+[15.141s] -- Up-to-date: /home/user/ros2_ws/src/manipulation_project/install/moveit2_scripts/share/moveit2_scripts/cmake/moveit2_scriptsConfig-version.cmake
+[15.141s] -- Up-to-date: /home/user/ros2_ws/src/manipulation_project/install/moveit2_scripts/share/moveit2_scripts/package.xml
+[15.153s] Invoked command in '/home/user/ros2_ws/src/manipulation_project/build/moveit2_scripts' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/simulations/ros2_sims_ws/install/rclrs_tests:/home/simulations/ros2_sims_ws/install/examples_rclrs_minimal_client_service:/home/simulations/ros2_sims_ws/install/sensor_msgs_py:/home/simulations/ros2_sims_ws/install/examples_rclrs_minimal_pub_sub:/home/simulations/ros2_sims_ws/install/examples_rclrs_message_demo:/home/simulations/ros2_sims_ws/install/rclrs:/home/simulations/ros2_sims_ws/install/rosidl_runtime_rs:/home/user/ros2_ws/install/ros2test:/home/user/ros2_ws/install/robotiq_85_driver:/opt/ros/humble _=/usr/bin/env /usr/bin/cmake --install /home/user/ros2_ws/src/manipulation_project/build/moveit2_scripts

@@ -38,11 +38,6 @@ public:
     move_group_gripper_ = std::make_shared<MoveGroupInterface>(
         move_group_node_, PLANNING_GROUP_GRIPPER);
 
-    // set max acceleration & speed for gripper to move slowly to grasp
-    // correctly
-    move_group_gripper_->setMaxAccelerationScalingFactor(0.01);
-    move_group_gripper_->setMaxVelocityScalingFactor(0.01);
-
     // get gripper and robot groups metadata
     joint_model_group_robot_ =
         move_group_robot_->getCurrentState()->getJointModelGroup(
@@ -129,10 +124,22 @@ public:
     RCLCPP_INFO(LOGGER, "Executing cartesian Trajectory...");
     execute_trajectory_cartesian();
 
+    // Almost close Gripper
+    RCLCPP_INFO(LOGGER, "about to close gripper");
+    // setup gripper closed angle value
+    setup_joint_value_gripper(0.63);
+    // plan and execute trajectory
+    RCLCPP_INFO(LOGGER, "Planning Gripper Trajectory...");
+    plan_trajectory_gripper();
+    RCLCPP_INFO(LOGGER, "Executing Gripper Trajectory...");
+    execute_trajectory_gripper();
+
+    std::this_thread::sleep_for(std::chrono::milliseconds(1000));
+
     // Close Gripper
     RCLCPP_INFO(LOGGER, "about to close gripper");
     // setup gripper closed angle value
-    setup_joint_value_gripper(0.65);
+    setup_joint_value_gripper(0.645);
     // plan and execute trajectory
     RCLCPP_INFO(LOGGER, "Planning Gripper Trajectory...");
     plan_trajectory_gripper();
@@ -140,7 +147,7 @@ public:
     execute_trajectory_gripper();
 
     // wait a bit before getting up
-    std::this_thread::sleep_for(std::chrono::milliseconds(5000));
+    std::this_thread::sleep_for(std::chrono::milliseconds(2000));
 
     // Get up the Z axis back to pre-grasp position
     RCLCPP_INFO(LOGGER, "Coming down to grasp position");
@@ -151,6 +158,57 @@ public:
     plan_trajectory_cartesian();
     RCLCPP_INFO(LOGGER, "Executing cartesian Trajectory...");
     execute_trajectory_cartesian();
+
+    std::this_thread::sleep_for(std::chrono::milliseconds(1000));
+
+    // move 180° with shoulder_pan_joint
+    RCLCPP_INFO(LOGGER, "Setup joint position");
+    // get current state of robot
+    current_state_robot_ = move_group_robot_->getCurrentState(10);
+    current_state_robot_->copyJointGroupPositions(joint_model_group_robot_,
+                                                  joint_group_positions_robot_);
+    setup_joint_value_target(
+        +3.05, joint_group_positions_robot_[1], joint_group_positions_robot_[2],
+        joint_group_positions_robot_[3], joint_group_positions_robot_[4],
+        joint_group_positions_robot_[5]);
+    // plan and execute the trajectory
+    RCLCPP_INFO(LOGGER, "Planning Joint Value Trajectory...");
+    plan_trajectory_kinematics();
+    RCLCPP_INFO(LOGGER, "Executing Joint Value Trajectory...");
+    execute_trajectory_kinematics();
+
+    // // move 180° with shoulder_pan_joint
+    // RCLCPP_INFO(LOGGER, "Setup target position");
+    // // setup target position of the robot
+    // setup_goal_pose_target(-0.340, 0.017, 0.300, -0.004, 1.000, -0.000,
+    // -0.000);
+    // // plan and execute the trajectory
+    // RCLCPP_INFO(LOGGER, "Planning Goal Pose Trajectory...");
+    // plan_trajectory_kinematics();
+    // RCLCPP_INFO(LOGGER, "Executing Goal Pose Trajectory...");
+    // execute_trajectory_kinematics();
+
+    // Open Gripper
+    RCLCPP_INFO(LOGGER, "about to close gripper");
+    // setup gripper closed angle value
+    setup_joint_value_gripper(0.05);
+    // plan and execute trajectory
+    RCLCPP_INFO(LOGGER, "Planning Gripper Trajectory...");
+    plan_trajectory_gripper();
+    RCLCPP_INFO(LOGGER, "Executing Gripper Trajectory...");
+    execute_trajectory_gripper();
+
+    // move back to home position
+    RCLCPP_INFO(LOGGER, "Coming back to Home Position...");
+    // setup the joint value target
+    RCLCPP_INFO(LOGGER, "Setup the Joint Value target...");
+    setup_joint_value_target(+0.0000, -2.3562, +1.5708, -1.5708, -1.5708,
+                             +0.0000);
+    // plan and execute the trajectory
+    RCLCPP_INFO(LOGGER, "Planning Joint Value Trajectory...");
+    plan_trajectory_kinematics();
+    RCLCPP_INFO(LOGGER, "Executing Joint Value Trajectory...");
+    execute_trajectory_kinematics();
   }
 
 private:

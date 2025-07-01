@@ -1,0 +1,12 @@
+/home/user/ros2_ws/src/manipulation_project/build/moveit2_scripts/CMakeFiles/uninstall.dir
+/home/user/ros2_ws/src/manipulation_project/build/moveit2_scripts/CMakeFiles/moveit2_scripts_uninstall.dir
+/home/user/ros2_ws/src/manipulation_project/build/moveit2_scripts/CMakeFiles/pick_and_place_trajectory.dir
+/home/user/ros2_ws/src/manipulation_project/build/moveit2_scripts/CMakeFiles/gripper_control.dir
+/home/user/ros2_ws/src/manipulation_project/build/moveit2_scripts/CMakeFiles/pick_and_place.dir
+/home/user/ros2_ws/src/manipulation_project/build/moveit2_scripts/CMakeFiles/test.dir
+/home/user/ros2_ws/src/manipulation_project/build/moveit2_scripts/CMakeFiles/edit_cache.dir
+/home/user/ros2_ws/src/manipulation_project/build/moveit2_scripts/CMakeFiles/rebuild_cache.dir
+/home/user/ros2_ws/src/manipulation_project/build/moveit2_scripts/CMakeFiles/list_install_components.dir
+/home/user/ros2_ws/src/manipulation_project/build/moveit2_scripts/CMakeFiles/install.dir
+/home/user/ros2_ws/src/manipulation_project/build/moveit2_scripts/CMakeFiles/install/local.dir
+/home/user/ros2_ws/src/manipulation_project/build/moveit2_scripts/CMakeFiles/install/strip.dir

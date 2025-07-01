@@ -1,0 +1,41 @@
+[0.053s] Invoking command in '/home/user/ros2_ws/src/manipulation_project/build/my_moveit_config': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/simulations/ros2_sims_ws/install/rclrs_tests:/home/simulations/ros2_sims_ws/install/examples_rclrs_minimal_client_service:/home/simulations/ros2_sims_ws/install/sensor_msgs_py:/home/simulations/ros2_sims_ws/install/examples_rclrs_minimal_pub_sub:/home/simulations/ros2_sims_ws/install/examples_rclrs_message_demo:/home/simulations/ros2_sims_ws/install/rclrs:/home/simulations/ros2_sims_ws/install/rosidl_runtime_rs:/home/user/ros2_ws/install/ros2test:/home/user/ros2_ws/install/robotiq_85_driver:/opt/ros/humble _=/usr/bin/env /usr/bin/cmake --build /home/user/ros2_ws/src/manipulation_project/build/my_moveit_config -- -j8 -l8
+[0.144s] Invoked command in '/home/user/ros2_ws/src/manipulation_project/build/my_moveit_config' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/simulations/ros2_sims_ws/install/rclrs_tests:/home/simulations/ros2_sims_ws/install/examples_rclrs_minimal_client_service:/home/simulations/ros2_sims_ws/install/sensor_msgs_py:/home/simulations/ros2_sims_ws/install/examples_rclrs_minimal_pub_sub:/home/simulations/ros2_sims_ws/install/examples_rclrs_message_demo:/home/simulations/ros2_sims_ws/install/rclrs:/home/simulations/ros2_sims_ws/install/rosidl_runtime_rs:/home/user/ros2_ws/install/ros2test:/home/user/ros2_ws/install/robotiq_85_driver:/opt/ros/humble _=/usr/bin/env /usr/bin/cmake --build /home/user/ros2_ws/src/manipulation_project/build/my_moveit_config -- -j8 -l8
+[0.280s] Invoking command in '/home/user/ros2_ws/src/manipulation_project/build/my_moveit_config': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/simulations/ros2_sims_ws/install/rclrs_tests:/home/simulations/ros2_sims_ws/install/examples_rclrs_minimal_client_service:/home/simulations/ros2_sims_ws/install/sensor_msgs_py:/home/simulations/ros2_sims_ws/install/examples_rclrs_minimal_pub_sub:/home/simulations/ros2_sims_ws/install/examples_rclrs_message_demo:/home/simulations/ros2_sims_ws/install/rclrs:/home/simulations/ros2_sims_ws/install/rosidl_runtime_rs:/home/user/ros2_ws/install/ros2test:/home/user/ros2_ws/install/robotiq_85_driver:/opt/ros/humble _=/usr/bin/env /usr/bin/cmake --install /home/user/ros2_ws/src/manipulation_project/build/my_moveit_config
+[0.297s] -- Install configuration: ""
+[0.297s] -- Up-to-date: /home/user/ros2_ws/src/manipulation_project/install/my_moveit_config/share/ament_index/resource_index/package_run_dependencies/my_moveit_config
+[0.297s] -- Up-to-date: /home/user/ros2_ws/src/manipulation_project/install/my_moveit_config/share/ament_index/resource_index/parent_prefix_path/my_moveit_config
+[0.297s] -- Up-to-date: /home/user/ros2_ws/src/manipulation_project/install/my_moveit_config/share/my_moveit_config/environment/ament_prefix_path.sh
+[0.298s] -- Up-to-date: /home/user/ros2_ws/src/manipulation_project/install/my_moveit_config/share/my_moveit_config/environment/ament_prefix_path.dsv
+[0.298s] -- Up-to-date: /home/user/ros2_ws/src/manipulation_project/install/my_moveit_config/share/my_moveit_config/environment/path.sh
+[0.298s] -- Up-to-date: /home/user/ros2_ws/src/manipulation_project/install/my_moveit_config/share/my_moveit_config/environment/path.dsv
+[0.299s] -- Up-to-date: /home/user/ros2_ws/src/manipulation_project/install/my_moveit_config/share/my_moveit_config/local_setup.bash
+[0.299s] -- Up-to-date: /home/user/ros2_ws/src/manipulation_project/install/my_moveit_config/share/my_moveit_config/local_setup.sh
+[0.299s] -- Up-to-date: /home/user/ros2_ws/src/manipulation_project/install/my_moveit_config/share/my_moveit_config/local_setup.zsh
+[0.300s] -- Up-to-date: /home/user/ros2_ws/src/manipulation_project/install/my_moveit_config/share/my_moveit_config/local_setup.dsv
+[0.300s] -- Installing: /home/user/ros2_ws/src/manipulation_project/install/my_moveit_config/share/my_moveit_config/package.dsv
+[0.300s] -- Up-to-date: /home/user/ros2_ws/src/manipulation_project/install/my_moveit_config/share/ament_index/resource_index/packages/my_moveit_config
+[0.300s] -- Up-to-date: /home/user/ros2_ws/src/manipulation_project/install/my_moveit_config/share/my_moveit_config/cmake/my_moveit_configConfig.cmake
+[0.300s] -- Up-to-date: /home/user/ros2_ws/src/manipulation_project/install/my_moveit_config/share/my_moveit_config/cmake/my_moveit_configConfig-version.cmake
+[0.301s] -- Up-to-date: /home/user/ros2_ws/src/manipulation_project/install/my_moveit_config/share/my_moveit_config/package.xml
+[0.301s] -- Up-to-date: /home/user/ros2_ws/src/manipulation_project/install/my_moveit_config/share/my_moveit_config/launch
+[0.301s] -- Up-to-date: /home/user/ros2_ws/src/manipulation_project/install/my_moveit_config/share/my_moveit_config/launch/move_group.launch.py
+[0.306s] -- Up-to-date: /home/user/ros2_ws/src/manipulation_project/install/my_moveit_config/share/my_moveit_config/launch/static_virtual_joint_tfs.launch.py
+[0.319s] -- Up-to-date: /home/user/ros2_ws/src/manipulation_project/install/my_moveit_config/share/my_moveit_config/launch/rsp.launch.py
+[0.319s] -- Up-to-date: /home/user/ros2_ws/src/manipulation_project/install/my_moveit_config/share/my_moveit_config/launch/spawn_controllers.launch.py
+[0.319s] -- Up-to-date: /home/user/ros2_ws/src/manipulation_project/install/my_moveit_config/share/my_moveit_config/launch/moveit_rviz.launch.py
+[0.319s] -- Up-to-date: /home/user/ros2_ws/src/manipulation_project/install/my_moveit_config/share/my_moveit_config/launch/setup_assistant.launch.py
+[0.319s] -- Up-to-date: /home/user/ros2_ws/src/manipulation_project/install/my_moveit_config/share/my_moveit_config/launch/warehouse_db.launch.py
+[0.320s] -- Up-to-date: /home/user/ros2_ws/src/manipulation_project/install/my_moveit_config/share/my_moveit_config/launch/demo.launch.py
+[0.320s] -- Up-to-date: /home/user/ros2_ws/src/manipulation_project/install/my_moveit_config/share/my_moveit_config/config
+[0.320s] -- Up-to-date: /home/user/ros2_ws/src/manipulation_project/install/my_moveit_config/share/my_moveit_config/config/pilz_cartesian_limits.yaml
+[0.320s] -- Up-to-date: /home/user/ros2_ws/src/manipulation_project/install/my_moveit_config/share/my_moveit_config/config/moveit_controllers.yaml
+[0.322s] -- Up-to-date: /home/user/ros2_ws/src/manipulation_project/install/my_moveit_config/share/my_moveit_config/config/moveit.rviz
+[0.322s] -- Up-to-date: /home/user/ros2_ws/src/manipulation_project/install/my_moveit_config/share/my_moveit_config/config/sensors_3d.yaml
+[0.323s] -- Up-to-date: /home/user/ros2_ws/src/manipulation_project/install/my_moveit_config/share/my_moveit_config/config/kinematics.yaml
+[0.323s] -- Up-to-date: /home/user/ros2_ws/src/manipulation_project/install/my_moveit_config/share/my_moveit_config/config/name.urdf.xacro
+[0.323s] -- Up-to-date: /home/user/ros2_ws/src/manipulation_project/install/my_moveit_config/share/my_moveit_config/config/name.srdf
+[0.323s] -- Up-to-date: /home/user/ros2_ws/src/manipulation_project/install/my_moveit_config/share/my_moveit_config/config/joint_limits.yaml
+[0.323s] -- Up-to-date: /home/user/ros2_ws/src/manipulation_project/install/my_moveit_config/share/my_moveit_config/config/initial_positions.yaml
+[0.324s] -- Up-to-date: /home/user/ros2_ws/src/manipulation_project/install/my_moveit_config/share/my_moveit_config/config/name.ros2_control.xacro
+[0.324s] -- Up-to-date: /home/user/ros2_ws/src/manipulation_project/install/my_moveit_config/share/my_moveit_config/.setup_assistant
+[0.325s] Invoked command in '/home/user/ros2_ws/src/manipulation_project/build/my_moveit_config' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/simulations/ros2_sims_ws/install/rclrs_tests:/home/simulations/ros2_sims_ws/install/examples_rclrs_minimal_client_service:/home/simulations/ros2_sims_ws/install/sensor_msgs_py:/home/simulations/ros2_sims_ws/install/examples_rclrs_minimal_pub_sub:/home/simulations/ros2_sims_ws/install/examples_rclrs_message_demo:/home/simulations/ros2_sims_ws/install/rclrs:/home/simulations/ros2_sims_ws/install/rosidl_runtime_rs:/home/user/ros2_ws/install/ros2test:/home/user/ros2_ws/install/robotiq_85_driver:/opt/ros/humble _=/usr/bin/env /usr/bin/cmake --install /home/user/ros2_ws/src/manipulation_project/build/my_moveit_config
