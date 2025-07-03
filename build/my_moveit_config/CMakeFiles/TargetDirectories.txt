@@ -1,9 +1,0 @@
-/home/user/ros2_ws/src/manipulation_project/build/my_moveit_config/CMakeFiles/uninstall.dir
-/home/user/ros2_ws/src/manipulation_project/build/my_moveit_config/CMakeFiles/my_moveit_config_uninstall.dir
-/home/user/ros2_ws/src/manipulation_project/build/my_moveit_config/CMakeFiles/test.dir
-/home/user/ros2_ws/src/manipulation_project/build/my_moveit_config/CMakeFiles/edit_cache.dir
-/home/user/ros2_ws/src/manipulation_project/build/my_moveit_config/CMakeFiles/rebuild_cache.dir
-/home/user/ros2_ws/src/manipulation_project/build/my_moveit_config/CMakeFiles/list_install_components.dir
-/home/user/ros2_ws/src/manipulation_project/build/my_moveit_config/CMakeFiles/install.dir
-/home/user/ros2_ws/src/manipulation_project/build/my_moveit_config/CMakeFiles/install/local.dir
-/home/user/ros2_ws/src/manipulation_project/build/my_moveit_config/CMakeFiles/install/strip.dir
