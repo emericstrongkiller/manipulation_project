@@ -49,7 +49,7 @@ class SurfaceDetection(Node):
             # Filtered cloud for surface detection
             filtered_cloud_plane = self.filter_cloud(cloud, min_x_dist = 0, max_x_dist=2.15, min_height=-0.1, max_height=0.4)
             # Filtered cloud for object detection
-            filtered_cloud_objects = self.filter_cloud(cloud, min_x_dist = 0.15, max_x_dist=0.35, min_height=0.0, max_height=0.2)
+            filtered_cloud_objects = self.filter_cloud(cloud, min_x_dist = 0.05, max_x_dist=2.0, min_height=0.0, max_height=0.2)
 
             # Segmentation: Plane extraction
             plane_indices, plane_coefficients, plane_cloud = self.extract_plane(filtered_cloud_plane)

@@ -7,6 +7,8 @@ Panels:
         - /Global Options1
         - /Status1
         - /TF1/Frames1
+        - /PointCloud21
+        - /PointCloud21/Topic1
       Splitter Ratio: 0.5
     Tree Height: 348
   - Class: rviz_common/Selection
@@ -316,10 +318,10 @@ Visualization Manager:
                                     {}
                           ft_frame:
                             {}
+            wrist_rgbd_camera_depth_optical_frame:
+              {}
             wrist_rgbd_camera_link:
               wrist_rgbd_camera_depth_frame:
-                wrist_rgbd_camera_depth_optical_frame:
-                  {}
                 wrist_rgbd_camera_fisheye_frame:
                   wrist_rgbd_camera_fisheye_optical_frame:
                     {}
@@ -360,7 +362,7 @@ Visualization Manager:
         Durability Policy: Volatile
         Filter size: 10
         History Policy: Keep Last
-        Reliability Policy: Reliable
+        Reliability Policy: Best Effort
         Value: /wrist_rgbd_depth_sensor/points
       Use Fixed Frame: true
       Use rainbow: true
@@ -395,7 +397,7 @@ Visualization Manager:
       Enabled: true
       Name: Object_makers
       Namespaces:
-        "": true
+        {}
       Topic:
         Depth: 5
         Durability Policy: Volatile
