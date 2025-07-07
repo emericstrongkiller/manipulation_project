@@ -14,9 +14,10 @@ from typing import List, Tuple, Union
 class SurfaceDetection(Node):
     def __init__(self) -> None:
         super().__init__('surface_detection_node')
+        self.get_logger().info("ANYONE HERE ??")
         self.pc_sub = self.create_subscription(
             PointCloud2,
-            '/wrist_rgbd_depth_sensor/points',
+            '/camera/depth/color/points',
             self.callback,
             10)
         self.surface_pub = self.create_publisher(

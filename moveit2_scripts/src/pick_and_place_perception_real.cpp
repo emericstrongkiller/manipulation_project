@@ -118,6 +118,19 @@ public:
     RCLCPP_INFO(LOGGER, "Executing Joint Value Trajectory...");
     execute_trajectory_kinematics();
 
+    // move to intermediate position before pre-grasp position, otherwise the
+    // planner sends the robot under the table in the real environment
+    RCLCPP_INFO(LOGGER, "Going to intermediate position");
+    // setup the joint value target
+    RCLCPP_INFO(LOGGER, "Setup the Goal pose target...");
+    setup_goal_pose_target(+0.298, +0.138, +0.319, 0.707, -0.707, -0.024,
+                           -0.026);
+    // plan and execute the trajectory
+    RCLCPP_INFO(LOGGER, "Planning Target Pose Trajectory...");
+    plan_trajectory_kinematics();
+    RCLCPP_INFO(LOGGER, "Executing Target Pose Trajectory...");
+    execute_trajectory_kinematics();
+
     // move above blue object
     RCLCPP_INFO(
         LOGGER,
@@ -127,9 +140,8 @@ public:
     RCLCPP_INFO(LOGGER, "Setup the goal pose");
     // setup_goal_pose_target(+0.340, -0.0195, +0.30, -1.000, +0.000, +0.000,
     //                        +0.000);
-    // TENTER 0.025 PROCHAIN OFFSET
     setup_goal_pose_target(
-        object_coordinates_[0] + 0.012, object_coordinates_[1] - 0.01,
+        object_coordinates_[0], object_coordinates_[1] - 0.02,
         object_coordinates_[2] + 0.28, -1.000, +0.000, +0.000, +0.000);
     // plan and execute the trajectory
     RCLCPP_INFO(LOGGER, "Planning Goal Pose Trajectory...");
@@ -157,24 +169,12 @@ public:
     RCLCPP_INFO(LOGGER, "Executing cartesian Trajectory...");
     execute_trajectory_cartesian();
 
-    std::this_thread::sleep_for(std::chrono::milliseconds(15000));
-
-    // Almost close Gripper
-    RCLCPP_INFO(LOGGER, "about to close gripper");
-    // setup gripper closed angle value
-    setup_joint_value_gripper(0.63);
-    // plan and execute trajectory
-    RCLCPP_INFO(LOGGER, "Planning Gripper Trajectory...");
-    plan_trajectory_gripper();
-    RCLCPP_INFO(LOGGER, "Executing Gripper Trajectory...");
-    execute_trajectory_gripper();
-
     std::this_thread::sleep_for(std::chrono::milliseconds(1000));
 
     // Close Gripper
     RCLCPP_INFO(LOGGER, "about to close gripper");
     // setup gripper closed angle value
-    setup_joint_value_gripper(0.645);
+    setup_joint_value_gripper(0.65);
     // plan and execute trajectory
     RCLCPP_INFO(LOGGER, "Planning Gripper Trajectory...");
     plan_trajectory_gripper();
@@ -289,7 +289,7 @@ private:
   RobotStatePtr current_state_gripper_;
   Plan gripper_trajectory_plan_;
   bool plan_success_gripper_ = false;
-  float delta_ = 0.145; // meters
+  float delta_ = 0.125; // meters
 
   // declare cartesian trajectory planning variables for robot
   std::vector<Pose> cartesian_waypoints_;
