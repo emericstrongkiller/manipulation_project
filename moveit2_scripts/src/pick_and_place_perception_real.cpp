@@ -132,10 +132,11 @@ public:
     execute_trajectory_kinematics();
 
     // move above blue object
-    RCLCPP_INFO(
-        LOGGER,
-        "Going above blue object at positions x: %f | y: %f + 0.15 | z: %f",
-        object_coordinates_[0], object_coordinates_[1], object_coordinates_[2]);
+    RCLCPP_INFO(LOGGER,
+                "########## GOING ABOVE OBJECT AT POSITIONS: x: %f | y: %f + "
+                "0.15 | z: %f #########",
+                object_coordinates_[0], object_coordinates_[1],
+                object_coordinates_[2]);
     // setup robot pose target
     RCLCPP_INFO(LOGGER, "Setup the goal pose");
     // setup_goal_pose_target(+0.340, -0.0195, +0.30, -1.000, +0.000, +0.000,

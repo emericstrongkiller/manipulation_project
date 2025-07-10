@@ -13,7 +13,7 @@ class StaticTransformPublisher:
         static_transform_stamped.header.frame_id = 'base_link'
         static_transform_stamped.child_frame_id = 'camera_depth_optical_frame'
 
-        static_transform_stamped.transform.translation.x = 0.5  
+        static_transform_stamped.transform.translation.x = 0.5 + 0.06
         static_transform_stamped.transform.translation.y = 0.605
         static_transform_stamped.transform.translation.z = 0.100
         static_transform_stamped.transform.rotation.x = 0.0
