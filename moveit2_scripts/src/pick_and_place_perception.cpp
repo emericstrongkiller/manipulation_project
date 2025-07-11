@@ -289,8 +289,7 @@ private:
   RobotStatePtr current_state_gripper_;
   Plan gripper_trajectory_plan_;
   bool plan_success_gripper_ = false;
-  float delta_ = 0.10; // meters
-  // old value 0.145
+  float delta_ = 0.145; // meters
   // declare cartesian trajectory planning variables for robot
   std::vector<Pose> cartesian_waypoints_;
   RobotTrajectory cartesian_trajectory_plan_;
