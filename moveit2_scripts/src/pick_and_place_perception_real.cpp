@@ -123,8 +123,11 @@ public:
     RCLCPP_INFO(LOGGER, "Going to intermediate position");
     // setup the joint value target
     RCLCPP_INFO(LOGGER, "Setup the Goal pose target...");
-    setup_goal_pose_target(+0.298, +0.138, +0.319, 0.707, -0.707, -0.024,
-                           -0.026);
+    setup_joint_value_target(+0.014711882919073105, -1.5782653294005335,
+                             1.470621411000387, -1.4400835794261475,
+                             -1.5575321356402796, -0.08198005357851201);
+    // setup_goal_pose_target(+0.298, +0.138, +0.319, 0.707, -0.707, -0.024,
+    //                        -0.026);
     // plan and execute the trajectory
     RCLCPP_INFO(LOGGER, "Planning Target Pose Trajectory...");
     plan_trajectory_kinematics();
@@ -134,12 +137,13 @@ public:
     // move above blue object
     RCLCPP_INFO(LOGGER,
                 "########## GOING ABOVE OBJECT AT POSITIONS: x: %f | y: %f + "
-                "0.15 | z: %f #########",
+                " 0.15 | z : % f######## #",
                 object_coordinates_[0], object_coordinates_[1],
                 object_coordinates_[2]);
     // setup robot pose target
     RCLCPP_INFO(LOGGER, "Setup the goal pose");
-    // setup_goal_pose_target(+0.340, -0.0195, +0.30, -1.000, +0.000, +0.000,
+    // setup_goal_pose_target(+0.340, -0.0195, +0.30, -1.000, +0.000,
+    //+0.000,
     //                        +0.000);
     setup_goal_pose_target(
         object_coordinates_[0], object_coordinates_[1] - 0.02,
@@ -290,7 +294,7 @@ private:
   RobotStatePtr current_state_gripper_;
   Plan gripper_trajectory_plan_;
   bool plan_success_gripper_ = false;
-  float delta_ = 0.125; // meters
+  float delta_ = 0.1; // meters
 
   // declare cartesian trajectory planning variables for robot
   std::vector<Pose> cartesian_waypoints_;
